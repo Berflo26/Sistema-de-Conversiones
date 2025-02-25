@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades - BF Creati Labs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <div class="converter">
+            <label for="unitType">Selecciona el tipo de unidad:</label>
+            <select id="unitType">
+                <option value="length">Longitud</option>
+                <option value="weight">Peso</option>
+                <option value="temperature">Temperatura</option>
+                <option value="volume">Volumen</option>
+                <option value="time">Tiempo</option>
+                <option value="weightToVolume">Peso a Volumen</option>
+                <option value="currency">Moneda</option>
+            </select>
+
+            <label for="fromUnit">De:</label>
+            <select id="fromUnit"></select>
+
+            <label for="toUnit">A:</label>
+            <select id="toUnit"></select>
+
+            <button id="swapUnits">↔ Intercambiar</button>
+
+            <label for="inputValue">Valor:</label>
+            <input type="number" id="inputValue" placeholder="Ingresa el valor">
+
+            <button id="convertBtn">Convertir</button>
+
+            <h2>Resultado: <span id="result"></span></h2>
+        </div>
+
+        <div class="history">
+            <h3>Historial de Conversiones</h3>
+            <ul id="historyList"></ul>
+            <button id="clearHistory">Limpiar Historial</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Creado por <strong>BF Creati Labs</strong>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
